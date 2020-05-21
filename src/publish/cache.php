@@ -4,7 +4,7 @@ return [
     'default' => [
         'driver' => HKY\HyperfCache\RedisDriver::class,
         'packer' => Hyperf\Utils\Packer\PhpSerializerPacker::class,
-        'prefix' => 'cache.',
+        'prefix' => 'cache:',
         //pool 对应config/autoload/redis.php key
         'pool' => 'default',
     ],

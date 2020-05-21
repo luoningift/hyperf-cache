@@ -9,12 +9,7 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-namespace Hky\Plugin;
-
-use Hky\Plugin\Consul\ConsulOnAfterWorkerStartListener;
-use Hky\Plugin\Consul\ConsulOnBeforeMainWorkerStartListener;
-use Hky\Plugin\Consul\ConsulOnShutdownListener;
-use Hky\Plugin\Consul\ConsulOnStartListener;
+namespace HKY\HyperfCache;
 
 class ConfigProvider
 {

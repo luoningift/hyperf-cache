@@ -16,7 +16,7 @@
     "psr/container": "^1.0",
     "hyperf/config": "~1.1.0",
     "hyperf/cache": "~1.1.0",
-    "hyperf/redis": "~1.1.0",
+    "hyperf/redis": "~1.1.0"
   },
   "autoload": {
     "psr-4": {

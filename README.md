@@ -46,4 +46,4 @@ return [
 // ApplicationContext::getContainer()->get(Cache::class)->set();
 ```
 ### 版本改动:
-v1.0.0   增加 http-discovery cache redis支持指定poolName
+v1.0.0   增加 hyperf-cache cache redis支持指定poolName

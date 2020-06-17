@@ -8,7 +8,7 @@
     "repositories":{
         "hky/hyperf-cache":{
             "type":"vcs",
-            "url":"git@192.168.100.11:base/hky-packages-hyperf-cache.git"
+            "url":"http://icode.kaikeba.com/base/hky-packages-hyperf-cache.git"
         }
         ....
     }
@@ -18,6 +18,12 @@
 ```bash
 $ composer require hky/hyperf-cache
 $ php bin/hyperf.php vendor:publish hky/hyperf-cache
+```
+如果遇到错误信息为:
+`Your configuration does not allow connections to http://icode.kaikeba.com/base/hky-packages-hyperf-http-client.git. See https://getcomposer.org/doc/06-config.md#secure-http for details` 
+执行以下命令
+```bash
+$ composer config secure-http false
 ```
 ##### 3.配置文件说明config/autoload/cache.php
 ```php
@@ -46,4 +52,5 @@ return [
 // ApplicationContext::getContainer()->get(Cache::class)->set();
 ```
 ### 版本改动:
+v1.0.1   README说明文档修改
 v1.0.0   增加 hyperf-cache cache redis支持指定poolName
